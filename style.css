@@ -41,7 +41,23 @@ header
                 text-decoration: none;
                 color: #FFF;
             }
+
+            & .seans_but
+            {
+                text-decoration: none;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+            }
+
+            & .seans_but:hover
+            {
+                background-size: 100% 2px;
+            }
         }
+
     }
 
     & button
@@ -62,6 +78,22 @@ main
     flex-direction: column;
     gap: 150px;
     color: #FFF;
+
+    & .go_up
+    {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        opacity: 0.2;
+        padding: 10px;
+    }
+
+    & .go_up:hover
+    {
+        opacity: 0.8;
+        border-radius: 70px;
+        box-shadow:0 0 30px #018ABE;
+    }
 
     & .index_box1
     {
@@ -213,3 +245,4 @@ main
     }
 
 }
+
